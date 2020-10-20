@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+#mainContainer {
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;	
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+
+
+#mainNav {
+	width: 100%;
+	height: 80px;
+	background-color: grey;
+}
+
+
+#bodyContainer {
+	width: auto;
+}
+
+
+
+
+#image1 {
+	width: 1240px;
+	height: 440px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 60px;
+	background-color: black
+}
+
+#text1 {
+	width: 1240px;
+	height: 180px;
+	margin-top: 60px;
+	margin-right: 20px;
+	margin-left: 20px;
+	background-color: black;
+}
+
+
+
+
+
+
+
+
+#banner {
+	width: 100%;
+    height: 600px;
+	margin-top: 200px;
+	background-color: gray; /* use $main-bg-color; in sass */
+}
+
+
+
+#aboutContainer {
+    width: 50%;
+    height: 300px;
+    background-color: gray;
+    margin-left: 25%;
+    margin-right: 30px;
+	
+    margin-top: 60px;
+}
+
+
+#footerNav {
+	width: 100%;
+    height: 100px;
+    background-color: gray;
+	/* gradient in html */
+	margin-top: 60px;	
+}
+
+
+
+p {
+	color: white;
+	width: 100%;
+	font-size: 16px;
+	text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+
+
