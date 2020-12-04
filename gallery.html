@@ -3,48 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Andrigo - Gallery</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+	<title>Jordan Andrigo Creative Designs - Gallery</title>
+	<!-- compile css links here -->
+	<link rel="stylesheet" type="text/css" href="css/master.css" media="screen">
+	<link rel="stylesheet" href="css/main.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+	<!-- link fonts here -->
+
+
+	<!-- Vue be sure to use id/class="app" in main tag or else vue will not work-->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+
 </head>
 <body>
 
-    <header>
-		<div id="mainConatiner">
-			<div id="header">
-				<div id="mainNav">
-					<p>Main Nav</p>
-				</div>
-			</div>	
-		</div>
-	</header>
-		<div id="bodyContainer">
-			<div id="banner">
-				<p>Banner Image goes here</p>
-			</div>
-		</div>
-		<div id="galleryContainer">
-			<div id="box1">
-                <p>piece goes here</p>
-            </div>
-            <div id="box2">
-                <p>piece goes here</p>
-            </div>
-		</div>
+	<div class="container"> 
+		<h1 class="hidden">Jordan Andrigo Creative Designs</h1>
 	
-	<footer>
-			<div id="footerNav">
-				<p>Footer Nav</p>
-			</div>
-	</footer>
+		<header class="mainHeader"> 
+			<div class="w3-container">
+	
+	
+				<div class="w3-dropdown-hover"><img src="images/jordan.jpg" alt="Jordan Thumb">
+				  <div class="w3-dropdown-content w3-card-4" style="width:250px">
+					<img src="images/jordan.png" alt="Jordan" style="width:100%">
+					<div class="w3-container">
+					  <p>Hi, I'm Jordan!</p>
+					  <p>Let's get creative.</p>
+					</div>
+				  </div>
+				</div>
+			  
+			  </div>
+	
+	
+	
+			<nav class="mainNav">
+				<h2 class="hidden">Main Naviagtion</h2>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li class="selected"><a href="#">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="logoHeader">
+			<img src="images/logo.svg" alt="Jordan Andrigo Creative Designs logo" id="logo" width="300px">
 		</div>
+			<div class="banner">
+				<img src="images/header_gallery.jpg" alt="Index banner image" id="banner" width="1400px">
+			</div>
+			
+	
+	
+	
+			<main>
+				
+			</main>
+	
+	
+		
+		<footer class="mainFooter">
+			<div>
+				<nav class="footerNav">
+				<h2 class="hidden">Footer navigation</h2>
+					<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li class="selected"><a href="#">GALLERY</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>  
+	
+			<div class="socialMedia">
+				<h2 class="hidden">Social Media</h2>
+					<ul id="iconNav">
+						<li id="instagram">
+							<a href="https://www.instagram.com/jordandrigo/">
+							<img src="images/instagram.jpg" alt="instagram">
+							</a>
+						</li>
+						<li id="pintrest">
+							<a href="https://www.pinterest.ca/jordanandrigo/idp2019-2021/">
+							<img src="images/pintrest.jpg" alt="pintrest">
+							</a>
+						</li>
+					</ul>
+				</div>     
+		</footer> 
+	</div>
 
 
-
-    <!-- JavaScript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="data/classData.js"></script>
-    <script src="js/main.js"></script>
+    <!-- JavaScript linked here -->
+   <!-- <script src="data/fetchData.js"></script> ????? -->
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>

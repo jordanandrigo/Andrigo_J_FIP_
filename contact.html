@@ -3,45 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jordan Andrigo - Contact Page</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen">
+	<title>Jordan Andrigo Creative Designs - Contact</title>
+	<!-- compile css links here -->
+    
+    <link rel="stylesheet" href="css/master.css" media="screen">
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+
+
+	<!-- link fonts here -->
+
+
 </head>
 <body>
 
-    <header>
-		<div id="mainConatiner">
-			<div id="header">
-				<div id="mainNav">
-					<p>Main Nav</p>
-				</div>
-			</div>	
-		</div>
-	</header>
-		<div id="bodyContainer">
-			<div id="banner">
-				<p>Banner Image goes here</p>
-			</div>
-		</div>
-		<div id="contactContainer">
-            <div id="contactBox">
-                <p>Contact Form goes here</p>
+    <div class="container"> 
+		<h1 class="hidden">Jordan Andrigo Creative Designs</h1>
+
+		<header class="mainHeader"> 
+            <div class="w3-container">
+ 
+  
+                <div class="w3-dropdown-hover"><img src="images/jordan.jpg" alt="Jordan Thumb">
+                  <div class="w3-dropdown-content w3-card-4" style="width:250px">
+                    <img src="images/jordan.png" alt="Jordan" style="width:100%">
+                    <div class="w3-container">
+                      <p>Hi, I'm Jordan!</p>
+                      <p>Let's get creative.</p>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+
+
+
+			<nav class="mainNav">
+				<h2 class="hidden">Main Naviagtion</h2>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li class="selected"><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+        </header>
+        <div class="logoHeader">
+            <img src="images/logo.svg" alt="Jordan Andrigo Creative Designs logo" id="logo" width="300px">
+        </div>
+
+
+			<main>
+                <div class="w3-container w3-center w3-animate-opacity">
+            
+                <div class="form">
+                    <h1 class="hidden">Mail Reference for API Processing</h1>
+                    <h2>Get in touch with Jordan Andrigo Creative Designs</h2>
+                    <p>Have a question? Want to hire me onto your team? Wish to collab?</p>
+                    <p>Feel free to send an email below.</p>
+            
+                <!-- <hr class="separator"> -->
+                <br>
+                <br>
+
+                    
+                <br>
+                <br>
+                    <!-- begin congacts form -->
+                
+                    <form action="includes/mail/mail.php" method="POST" id="mail-form">
+                        <label for="topic">Topic:</label>
+                        <select id="topic" name="topic" required>   <!-- dropdown menu inserted below with topic options for email subjects -->
+                            <option value="Other">Other</option>
+                            <option value="Design">Design</option>  
+                            <option value="Motion Design">Motion Design</option>  
+                            <option value="Web Development">Web Development</option>   
+                            <option value="Photography">Photography</option>  
+                        </select>
+
+                        
+
+
+
+
+                        <br></br>
+                        <label for="firstname">First Name:</label> <!-- mailer's first name, last name, email and message below -->
+                        <input type="text" id="firstname" name="firstname" placeholder="first name" required>
+            
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="last name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email" required>
+            
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" placeholder="your message here..." cols="30" rows="10"></textarea>
+                        <div class="submit-wrapper"> <!-- email submit button -->
+                            <span class="submit">Submit</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                    </form>
+                </div>
             </div>
-		</div>
-	
-	<footer>
-			<div id="footerNav">
-				<p>Footer Nav</p>
-			</div>
-	</footer>
-		</div>
+            </main>
+
+
+        
+		<footer class="mainFooter">
+            <div>
+                <nav class="footerNav">
+                <h2 class="hidden">Footer navigation</h2>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+					    <li><a href="gallery.html">GALLERY</a></li>
+					    <li class="selected"><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>  
+
+            <div class="socialMedia">
+                <h2 class="hidden">Social Media</h2>
+                    <ul id="iconNav">
+                        <li id="instagram">
+                            <a href="https://www.instagram.com/jordandrigo/">
+                            <img src="images/instagram.jpg" alt="instagram">
+                            </a>
+                        </li>
+                        <li id="pintrest">
+                            <a href="https://www.pinterest.ca/jordanandrigo/idp2019-2021/">
+                            <img src="images/pintrest.jpg" alt="pintrest">
+                            </a>
+                        </li>
+                    </ul>
+                </div>     
+    	</footer> 
+    </div>
+		
 
 
 
-    <!-- JavaScript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="data/classData.js"></script>
-    <script src="js/main.js"></script>
+    <!-- JavaScript linked here -->
+    <script src="js/main.js" type="module"></script>
 </body>
 </html>
