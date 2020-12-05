@@ -4,7 +4,7 @@
 body {
     background-color: #fbfcfe;
     color: white;
-    font-size: 16px;
+    font-size: 1em;
     font-family: "arial", "helvetica", sans-serif;
     height: 100%;
   }
@@ -18,6 +18,12 @@ body {
     padding: 5rem 1rem;
     border-radius: 4rem;
 }
+
+.form h2 {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
 
 
 
@@ -54,9 +60,9 @@ body {
   .banner img {
     width: 100%;
     position: absolute;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
   }
 
 
@@ -116,13 +122,14 @@ body {
     position: relative;
     margin: auto;
     margin-top: 3rem;
+    margin-left: 6rem;
 
   }
   
   .footerNav ul {
     padding: 0;
     list-style-type: none;
-    width: 500px;
+    width: 350px;
     margin-left: 0;
   }
   
@@ -152,27 +159,40 @@ body {
   /* ////// SOCIAL MEDIA LINKS ///////// */
 
   .socialMedia {
-    position: relative;
     margin-left: auto;
-    margin-top: 2rem;
-    margin-right: 3rem;
+    align-items: center;
+    margin-top: 2em;
+    
   }
   
-  #iconNav img {
-    width: 45px;
-    height: 45px;
+
+  .socialMedia img {
+    width: 3rem;
+    height: 3rem;
   }
   
-  #iconNav {
-    list-style: none;
-    margin: 0;
-    padding: 0
-  }
   
-  #iconNav li {
-    display: inline;
-    margin-right: 2rem;
+
+  .socialMedia img:hover {
+    background-color: none;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: 0.4s;
   }
+
+  .git {
+
+    padding-right: 2em;
+  }
+
+  .ig {
+    padding-right: 1em;
+  }
+
+  .pin {
+    padding-right: 1em;
+  }
+
 
 
 
@@ -278,14 +298,14 @@ body {
     font-size: 1.5em;
     margin-bottom: 0.8em;
     text-align: center;
+    padding-left: 1rem;
+      padding-right: 1rem;
   }
-  main hr {
-    width: 10%;
-    border: 1px solid rgba(255, 255, 255, 0.685);
-    margin: 40px 0;
-  }
+
+  
   main p {
-    
+    padding-left: 5rem;
+    padding-right: 5rem;
     text-align: center;
   }
   
@@ -314,24 +334,46 @@ body {
       margin: 0 auto;
       margin-top: 250px;
       margin-bottom: 50px;
-      background-color: #444044fa;
+      background-color: #444044af;
       text-align: center;
+      border-radius: 4rem;
+
+     
+  
+
+        animation-name: box;
+        animation-duration: 5s;
+      }
       
-  }
+      @keyframes box {
+        from {background-color: #c1bc94c0;}
+        to {background-color: #444044af;}
+      }
+    
+  
   
 
   .about h2 {
-      padding-top: 3rem;
+      padding-top: 1rem;
       font-weight: bold;
+      font-size: 2em;
   }
 
   .about p {
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
       padding-left: 5rem;
       padding-right: 5rem;
   }
 
+.about img {
+  padding-top: 3rem;
+    width: 150px;
+    transition: .5s;
+}
 
+.about img:hover {
+  width: 180px;
+}
 
 
 
@@ -349,8 +391,39 @@ body {
   .about .meButton:hover {
     background-color: #c1bc94;
     transition: 0.4s;
+
   }
 
   .meButton span {
     padding-right: 0.5em;
   }
+
+  /* ABOUT index.html ////////////////////////// END */
+
+
+
+
+
+
+   /* GALLERY BEGINS ////////////////////////// GALLERY */
+
+   .galleryContainer {
+     width: 100%;
+     margin: 0 auto;
+     height: auto;
+     margin-top: 100px;
+     margin-bottom: 50px;
+
+  
+   }
+
+   .galleryContainer .demoReel {
+     width: 90%;
+    padding-top: 500px;
+    margin: 0 auto;
+   }
+
+   .galleryContainer h2 {
+    font-weight: bold;
+    font-size: 2em;
+   }
