@@ -80,7 +80,7 @@
                     <!-- begin congacts form -->
                 
                     <form action="includes/mail/mail.php" method="POST" id="mail-form">
-                        <label for="topic">Topic:</label>
+                        <label for="topic">Topic:*</label>
                         <select id="topic" name="topic" required>   <!-- dropdown menu inserted below with topic options for email subjects -->
                             <option value="Other">Other</option>
                             <option value="Design">Design</option>  
@@ -95,16 +95,16 @@
 
 
                         <br></br>
-                        <label for="firstname">First Name:</label> <!-- mailer's first name, last name, email and message below -->
+                        <label for="firstname">First Name:*</label> <!-- mailer's first name, last name, email and message below -->
                         <input id="topic" type="text" id="firstname" name="firstname" placeholder="first name" required>
             
-                        <label for="lastname">Last Name:</label>
+                        <label for="lastname">Last Name:*</label>
                         <input id="topic" type="text" id="lastname" name="lastname" placeholder="last name" required>
             
-                        <label for="email">Email:</label>
+                        <label for="email">Email:*</label>
                         <input id="topic" type="email" id="email" name="email" placeholder="email" required>
             
-                        <label for="message">Your Message:</label>
+                        <label for="message">Your Message:*</label>
                         <textarea name="message" id="message" placeholder="your message here..." cols="30" rows="10"></textarea>
                         <div class="submit-wrapper"> <!-- email submit button -->
                             <span class="submit">Submit</span>

@@ -7,8 +7,8 @@
 
     .demoReel {
         width: 90%;
-       padding-top: 500px;
-       margin: 0 auto;
+        padding-top: 35%;
+        margin: 0 auto;
       }
 
      h2 {
@@ -16,3 +16,68 @@
         font-size: 2em;
        }
   }
+
+  @media only screen and (max-width: 600px) {
+   .galleryContainer .demoReel {
+     width: 90%;
+     padding-top: 0%;
+     margin: 0 auto;
+   }
+ }
+
+
+
+  .modelsTitle {
+    color: $main_color;
+    font-family: $main_font;
+    text-align: center;
+}
+
+
+.vids {
+    position: relative;
+    max-width: 1000px;
+    max-width: 100%;
+
+    video {
+        max-width: 100%;
+        padding-top: 10%;
+    }
+
+    .vidTitle {
+        position: absolute;
+        color: $main_color;
+        font-family: $main_font;
+        padding-left: 2rem;
+    }
+
+    .vidTitle h2 {
+        text-transform: uppercase;
+        font-size: 5em;
+        font-family: $main_font;
+    }
+
+    .videosList {
+        display: flex;
+        align-content: center;
+        margin: auto;
+        width: 100%;
+        max-width: 1000px;
+        text-align: center;
+
+        div {
+            max-width: 30rem;
+            align-content: center;
+
+            &:hover {
+                transform: scale(1.10);
+                cursor: pointer;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            border: 1px solid black;
+        }
+    }
+}
