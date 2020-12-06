@@ -70,36 +70,34 @@
 					</div>
 				</div>
 
+
+
+
+
+				<section class="user-section">
+					<!-- user-template copies get rendered here -->
+				</section>
+			<!-- end users section -->
+
+	
+		<!-- template files here (these don't render - the contents are reusable and get cloned at runtime) -->
+		<template id="user-template">
+			<div class="user">
+				<h1 class="hidden"></h1>
+				<img src="" alt="gallery img">
+				<h2 class="user-name"></h2>
+				<p class="user-nickname"></p>
+				<p class="user-role"></p>
+			</div>
+		</template>
 				
-					<div class="vids"> 
-					   <div class="vidTitle"> 
-						   <h2>{{ clickedVideo.name }}</h2> 
-						   <p>{{ clickedVideo.slogan }}</p>   
-					   </div>
-					   
-					   <div class="videosList">
-						   <div v-for="car in miniCars" @click="changeVid(car.id)">
-							   <img :src="`images/${car.thumb}`" :alt="car.name">
-						   </div>
-					   </div>
-				   </div> 
-				   <h2 v-if="miniCars.length !=0" class="modelsTitle">2020 Models</h2>
-				   <div class="carDescription">
-					   <hr>
-					   <h2>{{ clickedVideo.name }}</h2>
-					   <!-- <div class="vidPrice">
-						   <h2>{{ clickedVideo.price }}</h2> 
-					   </div> -->
-					   <p> {{ clickedVideo.description }}</p>
-					   <hr>
-					   <img :src="`images/${clickedVideo.img}`" :alt="clickedVideo.name">
-				   </div> 
-			  
-				
-			</main>
+	</main>
 	
 	
 		
+
+
+	
 		<footer class="mainFooter">
 			<div>
 				<nav class="footerNav">
@@ -130,6 +128,6 @@
 
     <!-- JavaScript linked here -->
    <!-- <script src="data/fetchData.js"></script> ????? -->
-    <script src="js/main.js" type="module"></script>
+    <script src="js/gallery.js" type="module"></script>
 </body>
 </html>
