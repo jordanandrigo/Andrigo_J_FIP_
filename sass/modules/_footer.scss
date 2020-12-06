@@ -1,7 +1,7 @@
 .mainFooter {
     display: flex;
     flex-direction: row;
-    background-color: #c1bc94f6;
+    background-color: $green;
     height: 125px;
     position: relative;
     left: 0;
@@ -36,7 +36,7 @@
 
                 &:hover {
                     padding: 10px;
-                    background-color: #fde8ad;
+                    background-color: $hover-color;
                     border-radius: 1em;
                     transition: 0.4s;
                   }

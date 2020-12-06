@@ -24,7 +24,7 @@
 				return xmlhttpmethod;
 			};
 		})(),
-		
+
 		//tweaked Ajax functions from Quirksmode
 		ajax = function( url, callback ) {
 			var req = xmlHttp();
