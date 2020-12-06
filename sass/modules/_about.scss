@@ -1,0 +1,88 @@
+.about {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 250px;
+    margin-bottom: 50px;
+    background-color: #444044af;
+    text-align: center;
+    border-radius: 4rem;
+    animation-name: box;
+    animation-duration: 5s;
+
+        h2 {
+            padding-top: 1rem;
+            font-weight: bold;
+            font-size: 2em;
+        }
+
+        p {
+            padding-bottom: 2rem;
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+
+        img {
+            padding-top: 3rem;
+            width: 150px;
+            transition: .5s;
+
+              &:hover {
+                width: 180px;
+                }
+            }
+
+        .meButton {
+            display: inline-block;
+            padding: 0.75rem 3rem;
+            border-radius: 0.5rem;
+            background-color:  #fadd8f;
+            cursor: pointer;
+            font-size: 1.2em;
+            color: #444044;
+            text-decoration: none;
+
+
+                &:hover {
+                    background-color: #c1bc94;
+                    transition: 0.4s;
+                
+                }
+
+                span {
+                    padding-right: 0.5em;
+                  }
+                  
+            }
+    }
+
+
+    
+    
+    @keyframes box {
+      from {background-color: #c1bc94c0;}
+      to {background-color: #444044af;}
+    }
+
+
+@media only screen and (max-width: 600px) {
+
+  .about {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #444044af;
+    text-align: center;
+    border-radius: 4rem;
+    animation-name: box;
+    animation-duration: 5s;
+
+      p {
+        font-size: 1em;
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+      }
+    }
+}
