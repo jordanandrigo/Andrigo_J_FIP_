@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 06, 2020 at 06:44 AM
+-- Generation Time: Dec 06, 2020 at 04:18 PM
 -- Server version: 5.7.26
 -- PHP Version: 7.4.2
 
@@ -30,20 +30,21 @@ CREATE TABLE `myGallery` (
   `id` int(12) NOT NULL,
   `category` varchar(20) NOT NULL,
   `description` text NOT NULL,
-  `content` text NOT NULL
+  `img` text NOT NULL,
+  `display` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `myGallery`
 --
 
-INSERT INTO `myGallery` (`id`, `category`, `description`, `content`) VALUES
-(1, 'Videography', 'Short documentary style film - Spring 2019', 'vid.mp4'),
-(2, 'Motion Design', 'Sportsnet Football Intro - Cinema 4D', 'sportsnet.mp4'),
-(3, 'Photography', 'Nuthatches - Fanshawe Conservation Area - Spring 2019', 'bird.jpg'),
-(4, 'Motion Design', 'Disney Channel TV Bumper - Cinema 4D & After Effects', 'kids.mp4'),
-(5, 'Photography', 'Red-winged Blackbird - Lambton Shores, ON', 'bird1.jpg'),
-(6, 'Photography', 'Red-winged Blackbird - Lambton Shores, ON', 'bird3.jpg');
+INSERT INTO `myGallery` (`id`, `category`, `description`, `img`, `display`) VALUES
+(1, 'Photography', 'Nuthatches - Fanshawe Conservation Area - Spring 2019', 'bird.jpg', 'bird.jpg'),
+(2, 'Motion Design', 'Spportsnet Football Intro - Cinema 4d & After Effects', 'sportsnet.jpg', 'sportsnet.mp4'),
+(3, 'Photography', 'Redwinged Balckbird - Lambton Shores, ON', 'bird1.jpg', 'bird1.jpg'),
+(4, 'Videography', 'Short Documentary Style film - Adobe Premiere Pro', 'vid.jpg', 'vid.mp4'),
+(5, 'Photography', 'Redwinged Blackbird - Lambton Shores, ON', 'bird2.jpg', 'bird2.jpg'),
+(6, 'Motion Design', 'Disney Channel TV Bumper - Cinema 4D & After Effects', 'kids.jpg', 'kids.mp4');
 
 --
 -- Indexes for dumped tables

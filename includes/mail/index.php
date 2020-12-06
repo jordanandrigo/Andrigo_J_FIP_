@@ -1,14 +1,10 @@
 <?php
-    include("connect.php");
-    include("functions.php");
+    require('functions.php');
 
-    if(isset($_GET["id"])) {
-        $targetID = $_GET["id"];
-        $result = getSingleUser($pdo, $targetID);
-
-        return $result;
+    if (isset($_GET['user'])) {
+        $user = getSingleUser($pdo);
     } else {
-        $allUsers = getAllUsers($pdo);
-
-        return $allUsers;
+        $user = getAllUser($pdo);
     }
+
+    echo json_encode($user);
