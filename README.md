@@ -5,7 +5,8 @@
 ## http://jandrigodesigns.ca/
 
 This is a dynamic portfolio webpage was created for fanshawe College final integraded assignemnt level 3, 2020. 
-Professional portfolio is used to display personal creation content. All work designed and created by Jordan Andigo.
+Professional portfolio is used to display personal creation content. All visuals and imagry created by Jordan Andigo.
+All photogrphy is original.
 
 Although I am just your below average, sleep deprived student, I can ocasionally pull off some pretty neat stuff. 
 Given the academic circumstances the pandemic has provided this year; I will be leaving 2020 with a professional portfolio website created entirely by moi, AND extremely poor posture - given credit to my online classroom aka my bed. 
