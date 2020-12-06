@@ -1,0 +1,114 @@
+.mainFooter {
+    display: flex;
+    flex-direction: row;
+    background-color: #c1bc94f6;
+    height: 125px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .footerNav {
+    position: relative;
+    margin: auto;
+    margin-top: 3rem;
+    margin-left: 6rem;
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+        width: 350px;
+        margin-left: 0;
+
+       li { 
+            cursor: pointer;
+            display: inline;
+            margin-right: 2rem;
+            font-size: 90%; 
+
+            a {
+                color: #444044;
+                padding: 5px;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover {
+                    padding: 10px;
+                    background-color: #fde8ad;
+                    border-radius: 1em;
+                    transition: 0.4s;
+                  }
+              }
+          }
+          
+      }
+  }
+  
+
+
+  @media only screen and (max-width: 600px) {
+    .footerNav {
+      position: relative;
+      margin: auto;
+      margin-top: 3rem;
+    
+
+        .ul {
+        padding: 0;
+        list-style-type: none;
+        width: 350px;
+
+        li { 
+            cursor: pointer;
+            display: inline;
+            margin-right: .5rem;
+            font-size: 90%; 
+          }
+        }
+    }
+  }
+
+  /* social media links */
+
+  
+  .socialMedia {
+    margin-left: auto;
+    align-items: center;
+    margin-top: 2em;
+    
+    img {
+        width: 3rem;
+        height: 3rem;
+
+        &:hover {
+            background-color: none;
+            width: 3.5rem;
+            height: 3.5rem;
+            transition: 0.4s;
+          }
+      } 
+  }
+  
+
+  .git {padding-right: 2em;}
+
+  .ig {padding-right: 1em;}
+
+  .pin {padding-right: 1em;}
+
+
+  @media only screen and (max-width: 600px) {
+    .socialMedia img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    .socialMedia img:hover {
+      background-color: none;
+      width: 2.7rem;
+      height: 2.7rem;
+      transition: none;
+    }
+  }

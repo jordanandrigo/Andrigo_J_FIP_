@@ -23,6 +23,7 @@ import { SendMail } from "./components/mailer.js";
         // show some UI here to let the user know the mail attempt was successful
     }
 
+    
     function processMail(event) {
         // block the default submit behaviour
         event.preventDefault();
@@ -37,6 +38,4 @@ import { SendMail } from "./components/mailer.js";
 
     mailSubmit.addEventListener("click", processMail);
 })();
-
-
 

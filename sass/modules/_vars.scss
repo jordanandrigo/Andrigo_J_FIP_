@@ -1,19 +1,19 @@
-// colours/colors 
-
-
-// fonts
+// variables hereeeeee 
 
 .hidden { display: none; }
-$main-bg-color: rgb(255, 255, 255);
-$main-color: white;
-
-$main-font-face: 'arial', 'helvetica', sans-serif;
-$main-font-size: 16px;
-
-$heading-color: rgba(255, 255, 255, 0.685);
 
 * {
     border: none;
     padding: 0;
     margin: 0;
 }
+
+// fonts
+$main-font: 'arial', 'helvetica', sans-serif;
+
+// colors 
+$bg-color:#fbfcfe;
+$hover-color: #fde8ad;
+$green: #c1bc94c0;
+$con-color: #444044af;
+
