@@ -62,7 +62,7 @@
 			<main id="app"> <!-- Vue only works if wrapped in id or class tag -->
 				<div class="galleryContainer">
 					<div class="demoReel">
-						<video width="100%" loop autoplay>
+						<video width="100%" controls>
 							<source src="videos/demo reel.mp4" type="video/mp4">
 							<!--<source src="videos/demo reel.ogg" type="video/ogg">-->
 							<!--<source src="videos/demo reel.webm" type="video/webm">-->
@@ -74,14 +74,42 @@
 
 
 
-				<section class="user-section">
-					<!-- user-template copies get rendered here -->
+				<template id="user-template">
+					<div class="user">
+						<h2 class="hidden"></h2>
+						<img src="" alt="portfolio piece">
+					</div>
+				</template>
+				<!-- end templates -->
+			
+				<!-- Lightbox - hidden by default, dynamic content -->
+				<section class="lightbox">
+					<span class="close-button">x</span>
+					<div class="lightbox-div">
+						<img src="" alt="portfolio piece" class="lightbox-image">
+						<h3 class="lightbox-title"></h3>
+						<h4 class="lightbox-category"></h4>
+						<p class="lightbox-description"></p>
+					</div>
 				</section>
+
+
+
+
+
+
+
+
+				
+
+				<!-- <section class="user-section">
+					 user-template copies get rendered here -->
+				<!-- </section> -->
 			<!-- end users section -->
 
 	
 		<!-- template files here (these don't render - the contents are reusable and get cloned at runtime) -->
-		<template id="user-template">
+		<!-- <template id="user-template">
 			<div class="user">
 				<h1 class="hidden"></h1>
 				<img src="" alt="gallery img">
@@ -89,7 +117,7 @@
 				<p class="user-nickname"></p>
 				<p class="user-role"></p>
 			</div>
-		</template>
+		</template> -->
 				
 	</main>
 	
@@ -97,7 +125,7 @@
 		
 
 
-	
+
 		<footer class="mainFooter">
 			<div>
 				<nav class="footerNav">
