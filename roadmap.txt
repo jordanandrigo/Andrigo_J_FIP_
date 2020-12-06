@@ -1,0 +1,36 @@
+FIP roadmap
+
+
+
+Objective: 
+
+Create a dynamic portfolio gallery that fetches data from the database and populates the gallery.html page using fetchData.js
+
+Gallery display pieces will be clickable to display it's description, category and larger display of selected piece.
+
+
+
+Achieved through:
+
+Connecting functions.php and index.php with connection.php linking the two files. 
+Database table will be exported from php MyAdmin as a file, which will be placed within data folder inside FIP main project folder.
+fetchData.js and main.js files containing back-end data to fetch selected content and populate the browser accordingly in real-time.
+
+Stylize data in css.
+Organize css into sass files accordingly.
+Create variables in their own scss file.
+@import all sass module files within master.scss file and compile to master.scss using.   sass --watch sass/master.scss css/master.css    creating master.css.map
+
+
+
+UI:
+- colour transitions when page is refreshed/loaded
+- hovers over nav, images, icons results in color shifts and image sizes
+- demo reel video autoplay looped
+- banner images with z-index on every page 
+- buttons 
+
+UX: 
+- error handle messages appear when required field in contact form has been left blank
+- error handle message appear when email has been successfully sent and unsuccessfully sent 
+- dropdown menu for topic selection in contact form
