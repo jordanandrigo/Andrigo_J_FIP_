@@ -1,8 +1,8 @@
 # Jordan Andrigo Creative Designs Portfolio
 
-# jandrigodesigns.ca
+# REMOVED URL 11/08/20
 
-## http://jandrigodesigns.ca/
+
 
 This is a dynamic portfolio webpage was created for fanshawe College final integraded assignemnt level 3, 2020. 
 Professional portfolio is used to display personal creation content. All visuals and imagry created by Jordan Andigo.
