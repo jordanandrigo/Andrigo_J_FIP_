@@ -10,8 +10,8 @@
 
    
 
-    $db_user = 'jandrigo_root';
-    $db_pass = 'onu%h{Jm@;s=';
+    $db_user = '';
+    $db_pass = '';
     
 
 
